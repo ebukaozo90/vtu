@@ -9,12 +9,13 @@ class Fruit{
    public $name;
    public $color;
 
+   // constructor 
 
-// setter method for name 
-
-public function set_name($name){
+   public function __construct($name, $color){
     $this->name = $name;
-}
+    $this->color = $color;
+
+   }
 
 
 // getter method for name 
@@ -22,12 +23,6 @@ public function set_name($name){
 public function get_name(){
     return $this->name;
 }
-// setter method for color 
-
-public function set_color($color){
-    $this->color = $color;
-}
-
 
 // getter method for name 
 
@@ -39,15 +34,11 @@ public function get_color(){
 
 // define the object 
 
-$apple = new Fruit();
-$apple->set_name("Apple");
-$apple->set_color("Blue");
+$apple = new Fruit("Apple", "Blue");
 
 // define for mango 
 
-$mango = new fruit();
-$mango->set_name("Mango");
-$mango->set_color("Red");
+$mango = new fruit("mango", "yellow");
 
 // print out result
 
