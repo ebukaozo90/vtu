@@ -51,9 +51,11 @@ $mango->set_color("Red");
 
 // print out result
 
-echo $mango->get_name();
+// echo $mango->get_name();
+echo $mango->name;
 echo "<br/>";
-echo $apple->get_name();
+// echo $apple->get_name();
+echo $apple->name;
 
 
 echo "<br/>";
