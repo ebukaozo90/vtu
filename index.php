@@ -59,9 +59,11 @@ echo $apple->get_name();
 echo "<br/>";
 echo "<br/>";
 
-echo $mango->get_color();
+// echo $mango->get_color();
+echo $mango->color;
 echo "<br/>";
-echo $apple->get_color();
+// echo $apple->get_color();
+echo $apple->color;
 
 
 
