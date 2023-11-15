@@ -1,63 +1,37 @@
 <?php
-
-// define a class
-
 class Fruit{
+    //property
+public $name;
+public $color;
 
-    // property
+// define the method/functions 
 
-   public $name;
-   public $color;
-
-   // constructor 
-
-   public function __construct($name, $color){
+public function set_name($name){
     $this->name = $name;
-    $this->color = $color;
 
-   }
-
-
-// getter method for name 
+}
 
 public function get_name(){
     return $this->name;
 }
 
-// getter method for name 
-
-public function get_color(){
-    return $this->color;
 }
 
-}
 
-// define the object 
+// define the objects 
 
-$apple = new Fruit("Apple", "Blue");
+$apple = new Fruit();
+$apple ->set_name('Apple');
 
-// define for mango 
+// Banana
 
-$mango = new fruit("mango", "yellow");
+$banana = new Fruit();
+$banana ->set_name('Banana');
 
-// print out result
+// get results 
 
-// echo $mango->get_name();
-echo $mango->name;
-echo "<br/>";
-// echo $apple->get_name();
-echo $apple->name;
-
-
-echo "<br/>";
-echo "<br/>";
-
-// echo $mango->get_color();
-echo $mango->color;
-echo "<br/>";
-// echo $apple->get_color();
-echo $apple->color;
-
-
+echo $banana->get_name();
+echo "<br />";
+echo $apple->get_name();
 
 ?>
